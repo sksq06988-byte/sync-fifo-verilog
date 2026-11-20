@@ -1,0 +1,141 @@
+{
+  "verification_date": "2026-11-20",
+  "time_zone": "Asia/Singapore",
+  "compiler": "Icarus Verilog version 12.0 (devel) (s20150603-1539-g2693dd32b)",
+  "runtime": "Icarus Verilog runtime version 12.0 (devel) (s20150603-1539-g2693dd32b)",
+  "windows_powershell": "5.1.26100.4652",
+  "compile_standard_flag": "-g2012",
+  "commands": [
+    "powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\\sim\\run_sync_fifo.ps1 -Matrix",
+    "powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\\sim\\run_sync_fifo.ps1 -DataWidth 12 -Depth 5 -Seed 99 -RandomCycles 300"
+  ],
+  "matrix_exit_code": 0,
+  "matrix_cases_passed": 12,
+  "extra_exit_code": 0,
+  "extra_cases_passed": 1,
+  "sources": [
+    {
+      "path": "rtl/sync_fifo.v",
+      "sha256": "af867c365a7566f6507b4b671ed45bb9ecc72163f6f2729387285a18730b1529"
+    },
+    {
+      "path": "tb/tb_sync_fifo.sv",
+      "sha256": "abf67ee2e9d312fa6b362c52b51d60b3e493c73e2f1181f0d33631609fb60ed6"
+    },
+    {
+      "path": "sim/run_sync_fifo.ps1",
+      "sha256": "29f851180d3fdb84d1a1213ab4d0a5f6fc5fbd3e2840297a652818a4ac457ea9"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "evidence/logs/sync_w12_d5_s99.log",
+      "sha256": "d45ac96510b2f65d1ea8535ffe78a4bd2fbd33a40a4fe861ba6b76e33889236e"
+    },
+    {
+      "path": "evidence/logs/sync_w16_d4_s1.log",
+      "sha256": "a59574ce77a294e11190c4c41032f5207fcc156d1e0fd9957d7dbfa04e6b1fde"
+    },
+    {
+      "path": "evidence/logs/sync_w16_d4_s42.log",
+      "sha256": "cdd39bedfc50c4f6e31858a71aa649ba91e930df52677ec8df10ee5478a00798"
+    },
+    {
+      "path": "evidence/logs/sync_w16_d4_s7.log",
+      "sha256": "72416bf935b57e57d00e86c5f60dcd9fb8bf1e4ff8db098f52d0fe2dc1498305"
+    },
+    {
+      "path": "evidence/logs/sync_w8_d1_s1.log",
+      "sha256": "79d733b15673e95e5b318c585509a8c5a33eedbfe32b7b165cac42e54eaf42d0"
+    },
+    {
+      "path": "evidence/logs/sync_w8_d1_s42.log",
+      "sha256": "f78129beb0e2adc036d4a0cfc87b224b5e940af7b7847a17d7f6b63c965820a0"
+    },
+    {
+      "path": "evidence/logs/sync_w8_d1_s7.log",
+      "sha256": "538e91e4143e29668ba0617cf6bf681c3af69d597ce4428fd552ddc1d5e3c812"
+    },
+    {
+      "path": "evidence/logs/sync_w8_d3_s1.log",
+      "sha256": "1decc21793a7e6aa065284fa7d609935a9cb8e93093250a857ccb935e150d93e"
+    },
+    {
+      "path": "evidence/logs/sync_w8_d3_s42.log",
+      "sha256": "33cb1c5f2012f54de57cf04fc3b8d79f880c769225f6e0ce5e657ea40aed8b60"
+    },
+    {
+      "path": "evidence/logs/sync_w8_d3_s7.log",
+      "sha256": "2497888539d897e6b195d993b80d681a6f8ac1bdbd08a8d7586511384da740f4"
+    },
+    {
+      "path": "evidence/logs/sync_w8_d4_s1.log",
+      "sha256": "9e3fc18d4e44b2462f2ffbccea9871379d0aa888383db7b9a6bc2841c453c429"
+    },
+    {
+      "path": "evidence/logs/sync_w8_d4_s42.log",
+      "sha256": "797f4ff8edf4927748fa1fe469e337e7148a07894560bd59f602f9f30032958b"
+    },
+    {
+      "path": "evidence/logs/sync_w8_d4_s7.log",
+      "sha256": "c45ad7a5ac1f7517209a3a6c8977b323bdc304a9d06ca909548a2d232a2a99ee"
+    },
+    {
+      "path": "evidence/waves/sync_w12_d5_s99.vcd",
+      "sha256": "215d18df2270fd04d5724af4377099186a13f79fd3d3de2a4ede83ff284c82d5"
+    },
+    {
+      "path": "evidence/waves/sync_w16_d4_s1.vcd",
+      "sha256": "22bfdea3ae2a257f6e5666daf9e568936612399e7841aeff677aff433d9ec1b8"
+    },
+    {
+      "path": "evidence/waves/sync_w16_d4_s42.vcd",
+      "sha256": "6a37b88a50df11da2e51f0b69f9a8a168579b73f3389d1d30741af20a07c5053"
+    },
+    {
+      "path": "evidence/waves/sync_w16_d4_s7.vcd",
+      "sha256": "f1975e5141ebebcf8772a58cd712efa42d26d6658c27db225c53399f7f9c0007"
+    },
+    {
+      "path": "evidence/waves/sync_w8_d1_s1.vcd",
+      "sha256": "6c3e815e9d5acafc4b6573d9d12d4f8683c91d7222d5b984df810dffe05943e7"
+    },
+    {
+      "path": "evidence/waves/sync_w8_d1_s42.vcd",
+      "sha256": "9157c35ce30c1b507fbcdde4203be88d03d8ef1e982017979d507f5cb97bb00c"
+    },
+    {
+      "path": "evidence/waves/sync_w8_d1_s7.vcd",
+      "sha256": "04b26c55394ceec16a447cd0164ef70d3b31b20087287d1deb88ff547923b800"
+    },
+    {
+      "path": "evidence/waves/sync_w8_d3_s1.vcd",
+      "sha256": "e12f34b32cdf69d9546a56ff19595a0fa874133b5aa71af694d0038aa7f5c166"
+    },
+    {
+      "path": "evidence/waves/sync_w8_d3_s42.vcd",
+      "sha256": "7a8f785fbfb39e037984f2635dbff2e03082f87ac1878c28a35b4a4a9e991615"
+    },
+    {
+      "path": "evidence/waves/sync_w8_d3_s7.vcd",
+      "sha256": "6c2698d75708ce6322cf8f3eb25ff73957593cfbac7fe0c62b05667c381a25bc"
+    },
+    {
+      "path": "evidence/waves/sync_w8_d4_s1.vcd",
+      "sha256": "f1e2afc22514040de5fad7612e6476283cdd1183ff15f52bab3e13490b1b751e"
+    },
+    {
+      "path": "evidence/waves/sync_w8_d4_s42.vcd",
+      "sha256": "dd5bb39278b47ab8c022b4419684b0c753f363904718a2cf471cc7bc57fd404b"
+    },
+    {
+      "path": "evidence/waves/sync_w8_d4_s7.vcd",
+      "sha256": "2f5be5df3ea007314301e3802a23284eef565d59632135e2ff53749782a949b0"
+    }
+  ],
+  "notes": [
+    "All listed fresh evidence was generated from this source copy before Git initialization.",
+    "Archived logs only replace machine-specific absolute source paths with repository-relative paths.",
+    "evidence/smoke is a pre-existing 100-cycle learning snapshot, excluded from the fresh 13-case regression and source-to-run provenance."
+  ]
+}

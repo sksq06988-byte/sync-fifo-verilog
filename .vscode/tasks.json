@@ -1,0 +1,44 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "FIFO: sync smoke (8x4, seed 1)",
+      "type": "process",
+      "command": "powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}\\sim\\run_sync_fifo.ps1",
+        "-DataWidth",
+        "8",
+        "-Depth",
+        "4",
+        "-Seed",
+        "1",
+        "-RandomCycles",
+        "100"
+      ],
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "FIFO: sync full matrix",
+      "type": "process",
+      "command": "powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}\\sim\\run_sync_fifo.ps1",
+        "-Matrix"
+      ],
+      "problemMatcher": []
+    }
+  ]
+}

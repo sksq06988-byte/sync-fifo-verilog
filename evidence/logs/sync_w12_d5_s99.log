@@ -1,0 +1,8 @@
+VCD info: dumpfile sync_w12_d5_s99.vcd opened for output.
+SYNC_FIFO_START WIDTH=12 DEPTH=5 SEED=99 RANDOM_CYCLES=300
+SYNC_RESET t=30000 resets=1 discarded=0
+SYNC_RESET t=650000 resets=2 discarded=1
+SYNC_RESET t=2190000 resets=3 discarded=4
+SYNC_COVERAGE blocked_write=18 blocked_read=16 empty_both=6 full_both=9 both=85 write_wraps=33 read_wraps=33 nonempty_resets=2
+SYNC_FIFO_PASS writes=175 reads=171 discarded=4 resets=3
+tb/tb_sync_fifo.sv:179: $finish called at 3725100 (1ps)

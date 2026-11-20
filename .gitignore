@@ -1,0 +1,6 @@
+# Generated results; the checked-in verification snapshot lives in evidence/.
+/sim/logs/
+/sim/waves/
+*.vvp
+Thumbs.db
+.DS_Store

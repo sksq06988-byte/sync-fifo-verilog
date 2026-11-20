@@ -1,0 +1,8 @@
+VCD info: dumpfile sync_w8_d1_s42.vcd opened for output.
+SYNC_FIFO_START WIDTH=8 DEPTH=1 SEED=42 RANDOM_CYCLES=1000
+SYNC_RESET t=30000 resets=1 discarded=0
+SYNC_RESET t=230000 resets=2 discarded=1
+SYNC_RESET t=5270000 resets=3 discarded=2
+SYNC_COVERAGE blocked_write=259 blocked_read=247 empty_both=116 full_both=129 both=0 write_wraps=251 read_wraps=249 nonempty_resets=2
+SYNC_FIFO_PASS writes=251 reads=249 discarded=2 resets=3
+tb/tb_sync_fifo.sv:179: $finish called at 10295100 (1ps)
